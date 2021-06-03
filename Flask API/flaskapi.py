@@ -9,14 +9,15 @@ import json
 import requests
 import os
 
-from werkzeug.utils import redirect, secure_filename
-
 app = flask.Flask(__name__)
 
+#Load modelnya
 model = tf.keras.models.load_model('cataract_model_basic.h5')
 
+#Directory untuk save image yang di upload via webpagenya
 app.config['UPLOAD_FOLDER'] = "/home/c0050413/capstone-mlmodel/images/"
 
+#Ambil image yang di upload kemudian di save ke folder /images/ dan kemudian di gunakan untuk kirim POST request ke diri sendirinya
 @app.route("/upload-image", methods=["GET", "POST"])
 def upload_file():
     if flask.request.files:
@@ -29,10 +30,12 @@ def upload_file():
         return(r)
     return flask.render_template("webpage.html")
 
+#Tampilin initial webpage
 @app.route('/',methods=['GET'])
 def HelloWorld():
     return flask.render_template("webpage.html")
 
+#Convert Image resolution
 def convert_image(image):
     if image.mode != "RGB":
         image = image.convert("RGB")
@@ -45,6 +48,7 @@ def convert_image(image):
 
     return image
 
+#Predict
 @app.route('/',methods=['POST'])
 def predict():
     image = flask.request.files["image"].read()
