@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Cataract Prediction</string>
+    <string name="cataract_prediction">Cataract Prediction</string>
+    <string name="cek_kesehatan_mata_anda">Cek Kesehatan Mata Anda</string>
+    <string name="sekarang">Sekarang!</string>
+    <string name="try_it_now">Try it Now!</string>
+    <string name="new_article">New Article</string>
+    <string name="category">category</string>
+    <string name="headline">Headline</string>
+    <string name="date">date</string>
+    <string name="author">author</string>
+    <string name="description">Description</string>
+    <string name="predict">Predict</string>
+    <string name="result">Result</string>
+    <string name="nav_title_prediction">Prediction</string>
+    <string name="nav_title_main">main</string>
+    <string name="instruction_title">How to use Cataract Prediction</string>
+    <string name="instruction">1. Tap the + button\n2. Upload the fundus photograph\n3. Tap the Predict button\n4. The application will automatically predict cataract based on the fundus photograph\n\nNote: The application can only predict cataract from fundus photograph and nothing else!</string>
+    <string name="about">Bangkit 2021\nTeamID: B21-CAP0379\nTeam Name: ABCD (Anak Bangkit Cinta Damai)\nTeam Members:\n1. Rizky Fajar Nur Pratama (A0050459) - Universitas Bina Nusantara\n2. Afif Prasetya (A1841893) - Universitas Andalas\n3. Ferdinand Leonardi (C0050413) - Universitas Bina Nusantara\n4. Rheditia Ferdiansyah (M2242165) - Universitas Islam Negeri Syarif Hidayatullah\n5. Ibrah Maula Setya Aji (M2242168) - Universitas Islam Negeri Syarif Hidayatullah</string>
+    <string name="result_cataract_normal">Result (Cataract/Normal)</string>
+</resources>
