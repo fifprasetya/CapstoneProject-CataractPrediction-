@@ -55,6 +55,9 @@
 - The app will automatically predict cataract based on the fundus photograph image
 
 Note: The application can only predict cataract from fundus photograph and nothing else
+You can get example fundus photograph in this link :
+https://drive.google.com/drive/folders/10IJJXyxT2yt1qldTS2SSMhGa-Wm4cYqE?usp=sharing
+https://drive.google.com/drive/folders/10IJJXyxT2yt1qldTS2SSMhGa-Wm4cYqE?usp=sharing
 ## Cloud Computing
 - Create a GCP Project.
 - Enable the APIs we are going to use `Compute Engine and Cloud Storage`
