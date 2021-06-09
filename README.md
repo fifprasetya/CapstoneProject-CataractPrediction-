@@ -16,6 +16,22 @@
 
 # `Project Brief`
 ## Machine Learning
+- Preprocess image datasets
+- Building and training models with Tensorflow
+- Save the model (.h5 extension)
+- Use the TFLiteConverter to convert the keras model into tflite model
+
+**Filtering Dataset**
+1. Download both dataset in "data_source" folder
+2. run Filtering_Data.ipynb to separate the image to training and validation
+
+**Creating Model**
+1. Used ImageDataGenerator flow_from_directory to takes the path to a directory & generates batches of augmented data.
+2. Run one of the model architecture (baseline & some transfer learning model)
+3. Compile & fit the model
+4. Optionally you can view the visualization of the accuracy and loss of the model
+5. saved the model as .h5 and tflite
+
 ## Mobile Android
 ## Cloud Computing
 - Create a GCP Project.
