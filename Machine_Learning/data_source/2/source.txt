@@ -1,0 +1,5 @@
+Kaggle source link:
+https://www.kaggle.com/jr2ngb/cataractdataset
+
+we pick a few image from this dataset to be combined with the first dataset so the dataset
+will be balance (the first dataset have more normal fundus image than cataract fundus image) 

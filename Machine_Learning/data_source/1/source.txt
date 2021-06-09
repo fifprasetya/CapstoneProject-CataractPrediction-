@@ -1,0 +1,8 @@
+Kaggle source link:
+https://www.kaggle.com/andrewmvd/ocular-disease-recognition-odir5k?select=ODIR-5K
+
+In the original dataset we mainly used the image from "preprocessed_image" folder,
+but since some image file name is missing (that was listed in full_df.csv) we look
+for the missing image in the ODIR-5k folder and combine the 2 folder inside it
+(it was split into train and validation but the dataset was meant for ocular disease)
+in a new folder called "image_data".
