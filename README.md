@@ -33,6 +33,28 @@
 5. saved the model as .h5 and tflite
 
 ## Mobile Android
+- Download Android App folder from github
+- Open file project on Android studio
+- run the apk on the Android Studio Emulator or any Emulator
+
+**Deploying Tflite Model**
+- Import this library to the build.gradle
+ implementation 'org.tensorflow:tensorflow-lite-support:0.1.0-rc1'
+ implementation 'org.tensorflow:tensorflow-lite-metadata:0.1.0-rc1'
+- Import Tflite model to the project by clicking the "file" toolbar -> new -> other -> tflite model
+- Import label.txt to assets folder by clicking the "file" toolbar -> new -> folder -> assets folder and copy the label.txt to it
+- Implement the sample code from the ML assets to the activity/fragment
+- Add some new code to get the image data from the file as a bitmap and convert it into byte buffer
+- Add the byte buffer to the input model. Example : inputFeature0.loadBuffer(byteBuffer)
+- Use the output from the model to get the index value from the label.txt and write that index value to the android UI
+
+**How to Use the App**
+- Click the button "Try It Now" at the Home Screen
+- Tap the + button to add fundus photographs image
+- Tap the predict button
+- The app will automatically predict cataract based on the fundus photograph image
+
+Note: The application can only predict cataract from fundus photograph and nothing else
 ## Cloud Computing
 - Create a GCP Project.
 - Enable the APIs we are going to use `Compute Engine and Cloud Storage`
